@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/actionCancel"
+        android:iconTint="@color/colorText"
+        android:title="Cancel"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionSave"
+        android:iconTint="@color/colorText"
+        android:title="Save"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/actionDelete"
+        android:iconTint="@color/colorText"
+        android:iconTintMode="add"
+        android:title="Delete"
+        app:showAsAction="never" />
+
+</menu>

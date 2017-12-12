@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.cse4230.schilbe.mycookbook.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorSecondary"
+        android:elevation="4dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="55dp"
+        android:background="#c1ffffff"
+        android:elevation="2dp">
+
+        <ImageButton
+            android:id="@+id/filterGF"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/filterDF"
+            android:background="#00ffffff"
+            android:elevation="3dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/gf" />
+
+        <ImageButton
+            android:id="@+id/filterDF"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/filterNF"
+            android:background="#00ffffff"
+            android:elevation="3dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/df" />
+
+        <ImageButton
+            android:id="@+id/filterNF"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/filterV"
+            android:background="#00ffffff"
+            android:elevation="3dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/nf" />
+
+        <ImageButton
+            android:id="@+id/filterV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="#00ffffff"
+            android:elevation="3dp"
+            android:padding="8dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/v" />
+
+        <TextView
+            android:id="@+id/filterText"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:text=""
+            android:textColor="@color/colorSecondary"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/filterClear"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="#00ffffff"
+            android:elevation="3dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/colorSecondary"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="105dp"
+        android:numColumns="2" />
+
+    <ImageButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#00ffffff"
+        android:elevation="3dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_add_circle" />
+</RelativeLayout>
