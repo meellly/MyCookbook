@@ -18,13 +18,41 @@ import java.util.ArrayList;
  * My Cookbook
  * Author: Melissa Schilbe
  *
- * Source Code:
+ * Source Code: https://github.com/meellly/MyCookbook
  *
  * Application features:
  * - Recipe and cooking application
  * - All CRUD operations can be performed on a recipe
+ * - Dynamic toolbar for easy navigation and access to page operations
  * - Filtering on different food allergies can be done from the main list page
+ *
+ * To Use:
+ * STEP 1 - Create some recipes
+ * Note: provided some nice recipe images in a zip file on Moodle submission
+ * a. From main screen, click on plus button
+ * b. Fill out fields  and select an image (FYI - an image is required to store the recipe)
+ * c. Check off some food allergy options at the bottom of the page
+ * d. Click the save (Can also click the back arrow or cancel option on the toolbar)
+ * e. Repeat to get multiple recipes in the view
+ * STEP 2 - View a recipe
+ * a. From main screen, select a recipe from the list
+ * b. Use the scrollable view to see all ingredient and directions
+ * STEP 3 - Edit a recipe
+ * a. From View Recipe screen, click on settings menu in the toolbar (3 vertical dots on top right)
+ * b. Click ‘Edit’ option (Can also click ‘up arrow’ on toolbar to go back to list view)
+ * c. Edit desired fields or swap out the image
+ * d. Click “SAVE” (Can also click “CANCEL” or “DELETE” from toolbar)
+ * STEP 4 - Delete a recipe
+ * a. From Edit Recipe screen, click on settings menu in the toolbar (3 vertical dots on top right)
+ * b. Click on settings menu in the toolbar (3 vertical dots on top right)
+ * c. Click on “Delete”
+ * d. Should be routed back to main screen and that recipe should be removed from the list
+ * STEP 5 - Filter recipes
+ * a. From main screen, click on one of 4 available food allergy options at top of screen (GF, DF, NF, V)
+ * b. The list of recipes will be limited to the option selected
+ * c. Click on the “X” to clear the filters, all the recipes should now be displayed
  *****************************************************************************/
+
 
 public class MainActivity extends AppCompatActivity {
     TextView filterText = null;
